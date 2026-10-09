@@ -1,0 +1,14 @@
+{
+  "name": "ia-university",
+  "owner": {
+    "name": "Andrés Arcila"
+  },
+  "description": "Skills de Claude Code para restaurantes: carta digital y página web bonitas, listas para el celular.",
+  "plugins": [
+    {
+      "name": "ia-restaurantes",
+      "source": "./",
+      "description": "Carta digital y página web para restaurantes con /web-restaurante."
+    }
+  ]
+}
