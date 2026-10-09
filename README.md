@@ -1,11 +1,17 @@
-# IA para restaurantes · carta digital con Claude Code
+# 🍽️ IA para restaurantes · carta digital con Claude Code
 
 Plugin para [Claude Code](https://claude.com/claude-code) que arma la **carta digital o la página web de un
-restaurante, panadería o negocio de comida**: un solo archivo HTML, bonito, rápido y pensado para leerse en
-el celular. La skill `/web-restaurante` encadena 8 skills de diseño, cada una con un solo trabajo.
+restaurante, panadería o negocio de comida**: un solo archivo HTML, bonito y pensado para leerse en el
+celular. La skill `/web-restaurante` encadena 8 skills de diseño, cada una con un solo trabajo.
 
-**Lo que garantiza:** los precios y nombres salen solo de tu carta (nunca se inventan), tus colores y letras
-mandan, no inventa fotos y la carta se ve terminada aunque todavía no tengas fotos.
+- **Nunca inventa precios:** nombres, precios y descripciones salen solo de tu carta.
+- **Tu marca manda:** si tienes colores y letras, se respetan.
+- **Lista para tus fotos:** se ve terminada sin fotos, y cuando las tengas se agregan sin rediseñar.
+
+> **English:** Restaurant menu & website plugin for Claude Code. One HTML file, mobile-first, beautiful.
+> Chains 8 design skills (ui-ux-pro-max, taste-skill, soft-skill, Emil Kowalski's animation skills,
+> impeccable). Prices are never invented, your brand rules, ready for your own food photos.
+> Instructions are in Spanish; the skill works in any language.
 
 ## Qué necesitas en tu carpeta
 
