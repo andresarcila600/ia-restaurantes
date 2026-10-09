@@ -49,6 +49,13 @@ su celular o un fotógrafo. Por eso la carta se diseña **lista para recibirlas*
   (`chocolate-pan.webp`, `chocolate-bebida.webp`).
 - **Producto con foto:** la foto va arriba de su renglón, en 4:3 recortada al centro, con bordes
   redondeados y `loading="lazy"`. El texto alternativo es el nombre del producto, nada más.
+- **La foto se amplía al tocarla:** la foto va dentro de un `<button>` (con `aria-label="Ampliar foto: <producto>"`
+  y una lupa chica en la esquina que avisa que se puede tocar). Al tocarla se abre un `<dialog>` con la
+  foto **completa**, sin recorte (`object-fit: contain`, alto máximo ~60 % de la pantalla) y debajo el nombre,
+  la descripción y los precios del producto, copiados del mismo renglón con `cloneNode` (nunca reescritos a
+  mano: así el precio del visor no puede diferir del de la carta). Se cierra con el botón X de 44 px,
+  tocando fuera, con Escape y con el botón "atrás" del celular (`history.pushState` en `try/catch`). Respeta
+  `prefers-reduced-motion`. Las fotos verticales son las que más lo necesitan: en la lista salen recortadas.
 - **Producto sin foto:** queda como renglón normal. **Nunca** un recuadro vacío, un ícono o un "foto
   próximamente". La carta tiene que verse terminada con cero fotos.
 - **Peso:** en el celular cada foto debe pesar menos de 300 KB y medir unos 900 px de ancho. Si una pesa

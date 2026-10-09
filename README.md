@@ -47,13 +47,14 @@ Cuando tengas fotos nuevas: *"ya tengo fotos nuevas, ponlas en la carta"*.
 
 | Skill | Para qué | Autor · licencia |
 |---|---|---|
-| web-restaurante | Orquesta todo el proceso | Andrés Arcila |
+| web-restaurante | Orquesta todo el proceso | Andrés Arcila · MIT |
 | ui-ux-pro-max | Paleta y letras según el tipo de negocio | Next Level Builder · MIT |
 | taste-skill, soft-skill | Que no parezca hecho por IA · acabado fino | Leonxlnx · MIT |
 | emil-design-eng, find-animation-opportunities, animate, review-animations | Detalles al tocar y movimiento justo | Emil Kowalski · MIT |
 | impeccable | Revisión final de contraste y accesibilidad | Paul Bakaus · Apache 2.0 |
 
-Las licencias completas están en `licencias/`.
+`web-restaurante` y los archivos del paquete van con licencia MIT ([LICENSE](LICENSE)). Cada skill de otro autor
+conserva su propia licencia; los textos completos están en `licencias/`.
 
 ## Regla de seguridad
 
