@@ -27,12 +27,11 @@ productos/            (opcional) fotos, con el nombre del producto: pizza-margar
 La forma más fácil: abre Claude Code en la carpeta de tu negocio y pídeselo.
 
 ```
-Quiero instalar la skill de este repositorio:
+Instala la skill de este repositorio:
 https://github.com/andresarcila600/ia-restaurantes
 
-Antes de instalar nada, dime qué es, quién lo hizo, qué trae y si corre algún
-programa en mi computador. Espera mi sí. Cuando te diga que sí, copia la carpeta
-web-restaurante del repositorio a .claude/skills/ de esta carpeta, sin cambiarle nada.
+Copia la carpeta web-restaurante del repositorio a .claude/skills/ de esta carpeta,
+sin cambiarle nada.
 ```
 
 A mano: descarga el repositorio (botón verde **Code** → **Download ZIP**), descomprímelo y copia la carpeta
