@@ -6,9 +6,13 @@ description: Arma la carta digital o la página web de un restaurante, panaderí
 # Web de restaurante — el orquestador
 
 Encadenas ocho skills de diseño en orden. A cada una le das **un solo trabajo**: el que las otras no hacen.
-No las invocas con la herramienta Skill: **lees su archivo** (`${CLAUDE_PLUGIN_ROOT}/skills/<nombre>/SKILL.md` y los
+No las invocas con la herramienta Skill: **lees su archivo** (`<esta-skill>/incluidas/<nombre>/SKILL.md` y los
 archivos que ese indique) y aplicas solo la parte que te toca en cada paso. Así ninguna se queda cargada
 entera ni toma el control.
+
+**Dónde están las otras ocho:** vienen dentro de esta skill, en la carpeta `incluidas/`. Donde esta guía
+diga `<esta-skill>`, es la carpeta donde está este archivo (por ejemplo `.claude/skills/web-restaurante`).
+Si falta alguna de las ocho, avisa antes de empezar.
 
 Argumentos opcionales: `sin-soft` (salta el paso 3) · `sin-python` (salta el script del paso 1).
 
@@ -70,7 +74,7 @@ y mostrar la lista de qué producto quedó con foto y cuál sigue sin foto.
 
 ### 1 · Sistema de diseño → ui-ux-pro-max
 Trabajo: escoger paleta, par de letras y estilo **según el tipo de negocio**.
-- Si hay Python, corre `python ${CLAUDE_PLUGIN_ROOT}/skills/ui-ux-pro-max/scripts/search.py "<tipo de negocio> <estilo> <palabras clave>" --design-system -p "<nombre>"`
+- Si hay Python, corre `python <esta-skill>/incluidas/ui-ux-pro-max/scripts/search.py "<tipo de negocio> <estilo> <palabras clave>" --design-system -p "<nombre>"`
   (usa `python3` si `python` no existe).
 - Si hay `marca/DESIGN.md`: manda la marca. Del resultado tomas solo lo que la marca no define.
 - Sin Python (o `sin-python`): sáltalo y avísalo en el informe.
@@ -87,7 +91,7 @@ Trabajo: jerarquía de letras, espacios, sombras y bordes. Escoge el arquetipo q
 (cálido, editorial). Los fondos oscuros tipo tecnología solo si la marca lo pide. Lo que repita a
 taste-skill, no lo vuelvas a aplicar.
 - **Letras (este paso decide):** un par de Google Fonts, una para títulos y otra para nombres y precios.
-  La lista de letras "demasiado vistas" de `${CLAUDE_PLUGIN_ROOT}/skills/impeccable/reference/brand.md` es un aviso, no una
+  La lista de letras "demasiado vistas" de `<esta-skill>/incluidas/impeccable/reference/brand.md` es un aviso, no una
   prohibición: Fraunces está ahí y fue la que mejor quedó en las pruebas (títulos con remates suaves que
   recuerdan al pan). Lo que sí se evita: Inter o letras de tecnología para una carta de comida, y letras
   a mano (Amatic, Pacifico) para leer precios. Si la marca ya tiene letra, manda la marca.
@@ -111,7 +115,7 @@ Siempre con `prefers-reduced-motion`.
 
 ### 6 · Revisión final → impeccable
 Trabajo: contraste y accesibilidad. **No corras sus scripts** (piden Node). Lee
-`${CLAUDE_PLUGIN_ROOT}/skills/impeccable/reference/audit.md` y `${CLAUDE_PLUGIN_ROOT}/skills/impeccable/reference/color-and-contrast.md` y revisa contra eso:
+`<esta-skill>/incluidas/impeccable/reference/audit.md` y `<esta-skill>/incluidas/impeccable/reference/color-and-contrast.md` y revisa contra eso:
 texto ≥ 4,5:1, botones de ≥ 44 px, nada se rompe a 360 px.
 
 ## El informe al terminar (corto, en español, sin jerga)
